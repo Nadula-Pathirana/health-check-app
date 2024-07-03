@@ -6,7 +6,7 @@ import shutil
 import sys
 
 def check_disk_usage(disk, min_gb, min_percent):
-    """Returns True if there is enough free disk space, false otherwise."""
+    """Returns True if there is enough free disk space, send false otherwise."""
     du = shutil.disk_usage(disk)
     # Calculate the percentage of free space
     percent_free = 100 * du.free / du.total
